@@ -8,7 +8,7 @@
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
   
   <!-- CSS file -->
-  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+  <link rel="stylesheet" type="text/css" href="styles.css" media="all">
   
 </head>
 <body>
@@ -16,22 +16,22 @@
 <h1>DINESAWS</h1>
 
 <h2>Look where they are</h2>
-<div id="choropleth_map"></div>
+<div id="fossil_map"></div>
 
 <h2>Molluscs boi</h2>
-<div id="scatter_plot"></div>
+<div id="era_cart"></div>
 
 <script type="text/javascript">
   
-  var vis1 = "js/choropleth_map.vg.json";
+  var vis1 = "fossil_map.json";
   
-  vegaEmbed('#choropleth_map', vis1).then(function(result) {
+  vegaEmbed('#fossil_map', vis1).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
-  var vis2 = "js/scatter_plot_interactive.vg.json";
+  var vis2 = "era_cart.json";
   
-  vegaEmbed('#scatter_plot', vis2).then(function(result) {
+  vegaEmbed('#era_cart', vis2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
